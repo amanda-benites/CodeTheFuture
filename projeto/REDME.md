@@ -1,2 +1,2 @@
 Esse é o front do projeto CodeTheFuture
-Autor: Amanda Benites
+Autor: Amanda Moraes Benites
