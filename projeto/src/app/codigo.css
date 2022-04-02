@@ -16,6 +16,9 @@ body {
 .main {
     flex-grow: 1;
     flex-shrink: 0;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .align-center {
@@ -42,7 +45,11 @@ body {
     border: none;
     height: 7%;
     color: white;
-    margin-bottom: 2% !important;
+    margin-bottom: 3% !important;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 30%;
+    margin-right: 5em;
 }
 
 .continue-btn {
@@ -51,15 +58,39 @@ body {
     border: none;
     height: 7%;
     color: white;
-    margin-bottom: 2% !important;
+    margin-bottom: 3% !important;
+    margin-left: 4%;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .button_conf {
-    flex-direction: row !important; 
     width: 40%;
+    margin-left: 1em;
+    margin-top: -4%;
 }
 
 .image_conf {
-    flex-direction: row !important;
     width: 50%;
+    margin-top: -4%;
+}
+
+.image_border {
+    margin-left: 30%;
+}
+
+.texto_conf {
+    text-align: center;
+    font-size: 25px;
+    margin-left: 17%;
+}
+
+.text_box {
+    margin-left: 27%;
+    border-radius: 0.5em;
+    border: 0em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    padding-left: 1em;
+    padding-right: 7em;
 }
