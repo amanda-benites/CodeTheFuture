@@ -13,6 +13,7 @@ body {
     background-color: #9EC298;
 }
 
+
 .main {
     flex-grow: 1;
     flex-shrink: 0;
@@ -24,7 +25,12 @@ body {
 .align-center {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+}
+
+.titulo {
+    margin-left: 0.5em;
+    color: #32602B;
 }
 
 .name-text{
