@@ -1,5 +1,5 @@
 body {
-    background-color: #135E8E;
+    background-color: #D7F4D2;
     margin: 0;
     height: 100%;
     display: flex;
@@ -9,13 +9,8 @@ body {
 }
 
 .header, .footer {
-    height: 7%;
-    background-color: #0b7197;
-}
-
-.bar-status {
-    height: 7%;
-    background-color: #FF6869;
+    height: 10%;
+    background-color: #9EC298;
 }
 
 .main {
@@ -48,4 +43,14 @@ body {
     height: 7%;
     color: white;
     margin-bottom: 2% !important;
+}
+
+.button_conf {
+    flex-direction: row;
+    width: 40%;
+}
+
+.image_conf {
+    flex-direction: row
+    width: 40%;
 }
