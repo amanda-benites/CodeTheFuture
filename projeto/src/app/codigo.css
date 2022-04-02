@@ -36,9 +36,18 @@ body {
     justify-content: flex-end;
 }
 
-.consume-btn {
+.cancel-btn {
     border-radius: 5px;
-    background-color: #7CB5D2;
+    background-color: #E81515;
+    border: none;
+    height: 7%;
+    color: white;
+    margin-bottom: 2% !important;
+}
+
+.continue-btn {
+    border-radius: 5px;
+    background-color: #4DA53E;
     border: none;
     height: 7%;
     color: white;
@@ -46,11 +55,11 @@ body {
 }
 
 .button_conf {
-    flex-direction: row;
+    flex-direction: row !important; 
     width: 40%;
 }
 
 .image_conf {
-    flex-direction: row
-    width: 40%;
+    flex-direction: row !important;
+    width: 50%;
 }
