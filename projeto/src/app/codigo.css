@@ -54,7 +54,7 @@ body {
     margin-bottom: 3% !important;
     padding-left: 2em;
     padding-right: 2em;
-    margin-left: 30%;
+    margin-left: 28%;
     margin-right: 5em;
 }
 
@@ -65,7 +65,7 @@ body {
     height: 7%;
     color: white;
     margin-bottom: 3% !important;
-    margin-left: 4%;
+    margin-left: 3%;
     padding-left: 2em;
     padding-right: 2em;
 }
@@ -102,5 +102,5 @@ button:hover {
     padding-top: 0.6em;
     padding-bottom: 0.6em;
     padding-left: 1em;
-    padding-right: 7em;
+    padding-right: 11em;
 }
