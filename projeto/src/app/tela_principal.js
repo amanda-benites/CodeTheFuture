@@ -117,9 +117,166 @@
 
 
 // const valores = [2, 5, 7];
-// //const valoresNegativos = valores.map(valor => valor*-1); // Map: realiza uma função - transforma todos os valores
+// const valoresNegativos = valores.map(valor => valor*-1); // Map: realiza uma função - transforma todos os valores
 
-// const valoresMaiores5 = valores.filter(valor => valor >= 5); // Filter: retorna o valor se ele passar por uma condição
+// //const valoresMaiores5 = valores.filter(valor => valor >= 5); // Filter: retorna o valor se ele passar por uma condição
 
 // console.log("VALOR ", valores);
 // console.log("valoresNegativos5 ", valoresMaiores5);
+
+
+
+// const objAluno = {
+//     nome: "Camila"
+//     , idade: 15
+// }
+
+// const propriedade = "nome";
+
+// objAluno.cpf = 85838985020;
+// objAluno["sexo"] = "F";
+
+// delete objAluno.cpf;
+
+// console.log(objAluno);
+// // console.log(objAluno["nome"]);3
+// // console.log(objAluno[propriedade]);
+
+
+
+// const num = null; // numero sem valor
+
+// if(num === null) {
+//     console.log("nulo")
+// }
+
+
+
+// const num = 5
+
+// console.log(typeof num); // determina qual o tipo da variável
+
+
+
+// const num = 6;
+
+// if(num <= 0) {
+//     console.log("Número menor ou igual a 0");
+// } else if (num % 2 === 0) {
+//     console.log("Número par");
+// } else {
+//     console.log("Número impar");
+// }
+
+
+
+// const dia = "quarta";
+
+// switch(dia) { // grupo de casos para não ficar repetindo os condicionais
+//     case "segunda":
+//         console.log("Livro mat");
+//         break;
+//     case "terça":
+//         console.log("Livro geo");
+//         break;
+//     case "quarta":
+//         console.log("Livro hist");
+//         break;
+//     default:
+//         console.log("Caderno"); // sempre deve aparecer
+// }
+
+
+
+// const num = 3;
+
+// const mensagem = num % 2 === 0 ? "Número par" : "Número ímpar" // ? -> questiona se é verdadeiro ou falso - : -> é o senao ----- condiç]ao ternário
+// console.log(mensagem)
+
+
+
+// const nomes = ["Amanda", "Alex", "Bruna"];
+
+// // console.log(nomes[0]);
+// // console.log(nomes[1]);
+// // console.log(nomes[2]);
+
+// for(let i = 0; i < nomes.length; i++) { // i -> posições da array, comeca em 0 por ser a primeira posição / i<nomes.length -> determina até que pnto executa o for / i++ -> adiciona o 1 no valor de i, levando para apróxima posição
+//     console.log(nomes[i])
+// }
+
+
+
+// const nomes = ["Amanda", "Alex", "Bruna"]
+// let todosNomes = "";
+// for(let i = 0; i < nomes.length; i++) { 
+//     todosNomes += `, ${nomes[i]}`
+// }
+
+// console.log(todosNomes)
+
+
+
+// const nome = ["Bia", "Camila", "Carla", "Denise", "Duda"];
+// let todosNomes = "";
+// for (let i = 0; i < nome.length; i++) {
+//     if (nome[i].startsWith("C")) {
+//         continue // continua o código, pulando o caso que não condiz com a condição
+//     }
+//     console.log(nome[i]);
+// }
+
+
+
+// const alunas = ["Ana", "Bruna", "Carla"];
+
+// let i = 0;
+
+// while(i<alunas.length){ // while -> enquanto algo for verdade ele ocorre
+//     console.log(alunas[i]);
+//     i++
+// }
+
+
+
+// function primeiraFuncao(nome) {
+//     console.log("Primeira mensagem de ", nome) 
+// }
+// primeiraFuncao("Amanda");
+
+
+
+// const texto = "ABC"; // parametros primitivos (const, string, num, boolean, null, undefined) não são alterados do lado de fora da função, arrays são
+// primeiraFuncao();
+
+// function primeiraFuncao(parametro1) {
+//     parametro1 = "teste";
+// }
+
+// console.log(texto);
+
+// const nome = ["Ana"];
+// primeiraFuncao(nome);
+
+// function primeiraFuncao(nome) {
+//     nome.push("Carol");
+// }
+
+// console.log(nome);
+
+
+
+// function soma(valor1, valor2) {
+//     return valor1 + valor2; // retorna a soma dos valores
+// }
+
+// const valoresSomados = soma(2, 3);
+// console.log(valoresSomados)
+
+
+
+// const soma = (valor1, valor2) => valor1+valor2;
+
+
+// const valoresSomados = soma(2, 3);
+// console.log(valoresSomados)
