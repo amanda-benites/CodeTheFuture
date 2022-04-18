@@ -113,13 +113,3 @@
 // console.log("nomes: ", nomes[0]);
 // console.log("nomes: ", nomes.includes("Ana"));
 // console.log(nomes. indexOf("Marcele")); // determinar a posição (index) de alguma variável
-
-
-
-// const valores = [2, 5, 7];
-// //const valoresNegativos = valores.map(valor => valor*-1); // Map: realiza uma função - transforma todos os valores
-
-// const valoresMaiores5 = valores.filter(valor => valor >= 5); // Filter: retorna o valor se ele passar por uma condição
-
-// console.log("VALOR ", valores);
-// console.log("valoresNegativos5 ", valoresMaiores5);
