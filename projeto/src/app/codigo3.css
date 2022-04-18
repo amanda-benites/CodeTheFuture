@@ -8,14 +8,97 @@ body {
     font-weight: bold;
 }
 
-.header {
+.header, .footer {
     height: 10%;
     background-color: #9EC298;
-    width: 100%;
+}
+
+
+.main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .align-center {
     display: flex;
     align-items: center;
     justify-content: left;
+}
+
+.titulo {
+    margin-left: 0.5em;
+    color: #32602B;
+}
+
+.name-text{
+    font-size: 2em;
+    color: #FFFFFF;
+    margin-right: 0.5em;
+}
+
+.margin-text-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cancel-btn {
+    border-radius: 5px;
+    background-color: #E81515;
+    border: none;
+    height: 7%;
+    color: white;
+    margin-bottom: 3% !important;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-right: 5em;
+}
+
+.continue-btn {
+    border-radius: 5px;
+    background-color: #4DA53E;
+    border: none;
+    height: 7%;
+    color: white;
+    margin-bottom: 3% !important;
+    margin-left: 3%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  } 
+
+.button_conf {
+    width: 40%;
+    margin-left: 1em;
+    margin-top: -4%;
+}
+
+.image_conf {
+    width: 50%;
+    margin-top: -4%;
+}
+
+.image_border {
+    margin-left: 30%;
+}
+
+.texto_conf {
+    font-size: 25px;
+}
+
+.text_box {
+    border-radius: 0.5em;
+    border: 0em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    padding-left: 1em;
+    padding-right: 11em;
 }
