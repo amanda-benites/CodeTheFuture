@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-.header, .footer {
+.header {
     height: 10%;
     background-color: #9EC298;
     width: 100%;

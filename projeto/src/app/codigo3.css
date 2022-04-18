@@ -1,0 +1,21 @@
+body {
+    background-color: #D7F4D2;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.header {
+    height: 10%;
+    background-color: #9EC298;
+    width: 100%;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
