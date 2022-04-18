@@ -20,6 +20,7 @@ body {
     margin-left: 1em;
     display: flex;
     align-items: center;
+    justify-content: center
 }
 
 .align-center {
@@ -54,7 +55,6 @@ body {
     margin-bottom: 3% !important;
     padding-left: 2em;
     padding-right: 2em;
-    margin-left: 28%;
     margin-right: 5em;
 }
 
@@ -92,11 +92,9 @@ button:hover {
 
 .texto_conf {
     font-size: 25px;
-    margin-left: 27%;
 }
 
 .text_box {
-    margin-left: 27%;
     border-radius: 0.5em;
     border: 0em;
     padding-top: 0.6em;
