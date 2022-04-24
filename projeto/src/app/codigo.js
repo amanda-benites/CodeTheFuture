@@ -63,7 +63,7 @@ function lista() {
         }
 }
 
-function selecao {
+function selecao() {
     const tarefas = [varrerCasa, aspirarCasa, passarPano, lavarLouca, tirarPo, arrumarQuarto, arrumarSala, arrumarCozinha, banheiro, arrumarRoupeiro]
 }
 
