@@ -18,12 +18,12 @@ function lista() {
     }
 
     const aspirarCasa = {
-        nome: "Varrer a casa"
-        , tempo: 20
+        nome: "Aspirar a Casa"
+        , tempo: 15
         }
 
     const passarPano = {
-        nome: "Varrer a casa"
+        nome: "Passar o pano no chão"
         , tempo: 20
         }
 
