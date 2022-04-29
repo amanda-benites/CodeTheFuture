@@ -10,7 +10,7 @@ import { Tela2Component } from './components/tela2/tela2.component';
   declarations: [
     AppComponent,
     Tela1Component,
-    Tela2Component
+    Tela2Component,
   ],
   imports: [
     BrowserModule,

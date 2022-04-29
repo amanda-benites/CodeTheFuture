@@ -1,19 +1,16 @@
 <body>
     <div class="header align-center">
-        <h1 class="titulo"> Quantidade de Tarefas</h1>
+        <h1 class="titulo">Seleção de Tarefas</h1>
+    </div>
+    
+    <div class="div_lista">
+        <ul>
+            <li class="lista" *ngFor="let task of tasks"><input type="checkbox" class="box">{{task.name}}</li>
+        </ul>
     </div>
 
-    <div class="main">
-        <div class="button_conf">
-            <p class="texto_conf">Quantidade de tarefas:</p>
-            <input id="numeroTarefas" class="text_box" type="number" name="tarefas" size="30" placeholder="Quantidade de tarefas"> <br> <br>
-            <button class="cancel-btn">Cancelar</button>
-            <button onclick="btnquant()" class="continue-btn">Continuar</button>
-        </div>
-
-        <div class="image_conf">
-            <img class="image_border" src="../assets/Tarefas_1.svg" style="height: 60%;" style="width: 60%;">  
-        </div>
+    <div class="botao">
+        <button class="cancel-btn">Cancelar</button>
+        <button class="continue-btn">Continuar</button>
     </div>
-
 </body>
