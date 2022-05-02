@@ -278,3 +278,10 @@
 
 // const valoresSomados = soma(2, 3);
 // console.log(valoresSomados)
+
+
+
+var total = tasks.reduce(getTotal, 0);
+function getTotal(total, item) {
+ return total + (item.time * item.quantity);
+}

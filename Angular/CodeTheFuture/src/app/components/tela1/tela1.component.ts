@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { time } from 'console';
 
 @Component({
   selector: 'app-tela1',
@@ -13,15 +14,19 @@ export class Tela1Component implements OnInit {
   }
 
   tasks = [
-    { name: "Varrer a casa", time: 20 },
-    { name: "Aspirar a Casa", time: 15 },
-    { name: "Passar o pano no chão", time: 40 },
-    { name: "Lavar a louça", time: 10 },
-    { name: "Tirar o pó", time: 20 },
-    { name: "Arrumar o quarto", time: 30 },
-    { name: "Arrumar a sala", time: 25 },
-    { name: "Arrumar a Cozinha", time: 25 },
-    { name: "Arrumar e limpar o banheiro", time: 50 },
-    { name: "Arrumar o roupeiro", time: 20 },    
+    { name: "Varrer a casa", tempo: 20 },
+    { name: "Aspirar a Casa", tempo: 15 },
+    { name: "Passar o pano no chão", tempo: 40 },
+    { name: "Lavar a louça", tempo: 10 },
+    { name: "Tirar o pó", tempo: 20 },
+    { name: "Arrumar o quarto", tempo: 30 },
+    { name: "Arrumar a sala", tempo: 25 },
+    { name: "Arrumar a Cozinha", tempo: 25 },
+    { name: "Arrumar e limpar o banheiro", tempo: 50 },
+    { name: "Arrumar o roupeiro", tempo: 20 }    
   ]
+
+  addTime() {
+    const timeTotal =+ tempo;
+  }
 }
