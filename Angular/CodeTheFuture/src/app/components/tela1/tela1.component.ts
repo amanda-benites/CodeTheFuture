@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { time } from 'console';
 
 @Component({
   selector: 'app-tela1',
@@ -12,6 +11,7 @@ export class Tela1Component implements OnInit {
 
   ngOnInit(): void {
   }
+
 
   tasks = [
     { name: "Varrer a casa", tempo: 20 },
@@ -26,7 +26,5 @@ export class Tela1Component implements OnInit {
     { name: "Arrumar o roupeiro", tempo: 20 }    
   ]
 
-  addTime() {
-    const timeTotal =+ tempo;
-  }
+
 }
