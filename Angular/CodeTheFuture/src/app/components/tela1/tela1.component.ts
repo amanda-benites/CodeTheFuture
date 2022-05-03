@@ -13,6 +13,8 @@ export class Tela1Component implements OnInit {
   }
 
 
+  soma = 0;
+
   tasks = [
     { name: "Varrer a casa", tempo: 20 },
     { name: "Aspirar a Casa", tempo: 15 },
@@ -27,4 +29,15 @@ export class Tela1Component implements OnInit {
   ]
 
 
+
+
+
+
+
+
+
+
+  //somaTempo() {
+  //   this.soma += this.tasks[1]
+  // }
 }
