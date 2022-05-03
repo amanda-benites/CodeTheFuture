@@ -1,0 +1,30 @@
+<mat-card class="result">
+    <mat-card-content>
+      <h2 class="example-h2">Sample</h2>
+  
+      <section
+        *ngFor="let ing of pizzaIng; let i = index"
+        class="example-section"
+      >
+        <mat-checkbox [(ngModel)]="ing.checked" (change)="teste()">
+          {{ing.name}}
+        </mat-checkbox>
+      </section>
+    </mat-card-content>
+  </mat-card>
+  
+  <mat-card class="result">
+    <mat-card-content>
+      <h2 class="example-h2">Select / Deselect</h2>
+  
+      <section class="example-section">
+        <mat-checkbox
+          (change)="updateCheck()"
+          class="example-margin"
+          [(ngModel)]="selectAll"
+        >
+          Select All
+        </mat-checkbox>
+      </section>
+    </mat-card-content>
+  </mat-card>
