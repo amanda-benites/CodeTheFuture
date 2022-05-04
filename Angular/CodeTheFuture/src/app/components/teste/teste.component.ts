@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './teste.component.html',
   styleUrls: ['./teste.component.scss']
 })
-export class CheckboxConfigurableExample {
+export class TesteComponent {
   pizzaIng: any;
   selectAll = false;
 
