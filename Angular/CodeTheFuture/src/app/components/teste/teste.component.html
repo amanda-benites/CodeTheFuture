@@ -6,7 +6,7 @@
       <section
         *ngFor="let task of tasks; let i = index"
       >
-        <mat-checkbox [(ngModel)]="task.checked" (change)="testando()" class="lista">
+        <mat-checkbox [(ngModel)]="task.checked" (change)="testando()" (change)="calculo()" class="lista">
           {{task.name}}
         </mat-checkbox>
       </section>
@@ -17,18 +17,3 @@
     <p>O tempo total necessário para realizar as tarefas é de: {{this.tempoTotal}}  </p>
   </section>
 </body> 
-  <!-- <mat-card class="result">
-    <mat-card-content>
-      <h2 class="example-h2">Select / Deselect</h2>
-  
-      <section class="example-section">
-        <mat-checkbox
-          (change)="updateCheck()"
-          class="example-margin"
-          [(ngModel)]="selectAll"
-        >
-          Select All
-        </mat-checkbox>
-      </section>
-    </mat-card-content>
-  </mat-card> -->

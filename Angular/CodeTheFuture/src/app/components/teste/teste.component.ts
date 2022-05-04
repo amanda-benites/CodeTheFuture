@@ -45,12 +45,24 @@ export class TesteComponent {
     }
   }
 
+  // calculo() {
+  //   if (this.tasks.checked === true) {
+  //     this.tasks.time.map(() => {
+  //       this.tasks[0].tempo += this.tasks[1].tempo;
+  //       this.tasks[0] = this.tasks[1]
+  //       this.tasks[1] = this.tasks[2]
+  //     });
+  //     console.log(this.tasks[0].tempo)
+  //   }
+  // }
+
+
   calculo() {
     if (this.tasks.checked === true) {
-      this.tasks.map((task) => {
-        this.tempoTotal = this.tempo + task.tempo;
-        console.log(this.tempoTotal)
+      this.tasks.time.map((task) => {
+        this.tempoTotal = this.tempo + task.tempo
       });
+      console.log(this.tempoTotal)
     }
   }
 }
