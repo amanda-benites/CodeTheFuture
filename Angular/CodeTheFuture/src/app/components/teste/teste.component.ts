@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teste.component.scss']
 })
 export class TesteComponent {
-  pizzaIng: any;
+  tasks: any;
   selectAll = false;
 
   constructor() {
-    this.pizzaIng = [
+    this.tasks = [
       { name: "Varrer a casa", tempo: 20, checked: false },
       { name: "Aspirar a Casa", tempo: 15, checked: false },
       { name: "Passar o pano no chão", tempo: 40, checked: false },
@@ -24,19 +24,29 @@ export class TesteComponent {
     ];
   }
 
-  teste() {
-    console.log(this.pizzaIng);
-  }
+  // teste() {
+  //   console.log(this.tasks);
+  // }
+
+  tempo = 0;
 
   updateCheck() {
-    console.log(this.selectAll);
     if (this.selectAll === true) {
-      this.pizzaIng.map((pizza) => {
-        pizza.checked = true;
+      this.tasks.map((task) => {
+        task.checked = true;
       });
     } else {
-      this.pizzaIng.map((pizza) => {
+      this.tasks.map((pizza) => {
         pizza.checked = false;
+      });
+    }
+  }
+
+  calculo() {
+    if (this.tasks.checked === true) {
+      this.tasks.map((task) => {
+        let tempoTotal = this.tempo + task.time;
+        console.log(tempoTotal)
       });
     }
   }

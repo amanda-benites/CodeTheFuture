@@ -4,10 +4,10 @@
       <h2 class="example-h2">Sample</h2>
   
       <section
-        *ngFor="let ing of pizzaIng; let i = index"
+        *ngFor="let task of tasks; let i = index"
       >
-        <mat-checkbox [(ngModel)]="ing.checked" (change)="teste()" class="lista">
-          {{ing.name}}
+        <mat-checkbox [(ngModel)]="task.checked" (change)="updateCheck()" (change)="calculo()" class="lista">
+          {{task.name}}
         </mat-checkbox>
       </section>
     </mat-card-content>
