@@ -2,15 +2,22 @@
     <div class="header align-center">
         <h1 class="titulo">Seleção de Tarefas</h1>
     </div>
-    
-    <div class="div_lista">
-        <ul>
-            <li class="lista" *ngFor="let task of tasks">{{task.name}}</li>
-        </ul>
-    </div>
 
-    <div class="botao">
-        <button class="cancel-btn">Cancelar</button>
-        <button class="continue-btn">Continuar</button>
-    </div>
+    <mat-card>
+        <mat-card-content>
+            <section 
+                *ngFor="let task of tasks; let i = index" 
+                class="div_lista"
+            >
+                <mat-checkbox [(ngModel)]="selectAll" (change)="updateCheck()">
+                    {{task.name}}
+                </mat-checkbox>
+            </section>
+        </mat-card-content>
+    </mat-card>
+
+        <section class="botao">
+            <button class="cancel-btn">Cancelar</button>
+            <button class="continue-btn">Continuar</button>
+        </section>
 </body>

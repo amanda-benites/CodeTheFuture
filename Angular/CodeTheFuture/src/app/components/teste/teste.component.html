@@ -1,19 +1,23 @@
-<mat-card class="result">
+<body>
+  <mat-card class="result">
     <mat-card-content>
       <h2 class="example-h2">Sample</h2>
   
       <section
         *ngFor="let ing of pizzaIng; let i = index"
-        class="example-section"
       >
-        <mat-checkbox [(ngModel)]="ing.checked" (change)="teste()">
+        <mat-checkbox [(ngModel)]="ing.checked" (change)="teste()" class="lista">
           {{ing.name}}
         </mat-checkbox>
       </section>
     </mat-card-content>
   </mat-card>
-  
-  <mat-card class="result">
+
+  <section>
+    <p>O tempo total necessário para realizar as tarefas é de: </p>
+  </section>
+</body> 
+  <!-- <mat-card class="result">
     <mat-card-content>
       <h2 class="example-h2">Select / Deselect</h2>
   
@@ -27,4 +31,4 @@
         </mat-checkbox>
       </section>
     </mat-card-content>
-  </mat-card>
+  </mat-card> -->
