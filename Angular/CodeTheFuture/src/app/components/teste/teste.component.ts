@@ -24,20 +24,23 @@ export class TesteComponent {
     ];
   }
 
-  // teste() {
-  //   console.log(this.tasks);
-  // }
-
   tempo = 0;
+  tempoTotal = 0;
 
-  updateCheck() {
+  testando() {
+    console.log(this.tasks)
+  }
+
+
+  teste() {
+    console.log(this.selectAll);
     if (this.selectAll === true) {
       this.tasks.map((task) => {
         task.checked = true;
       });
     } else {
-      this.tasks.map((pizza) => {
-        pizza.checked = false;
+      this.tasks.map((task) => {
+        task.checked = false;
       });
     }
   }
@@ -45,8 +48,8 @@ export class TesteComponent {
   calculo() {
     if (this.tasks.checked === true) {
       this.tasks.map((task) => {
-        let tempoTotal = this.tempo + task.time;
-        console.log(tempoTotal)
+        this.tempoTotal = this.tempo + task.tempo;
+        console.log(this.tempoTotal)
       });
     }
   }
