@@ -1,12 +1,11 @@
 <body>
+  <h2 class="header">Quantidade de Tarefas</h2>
   <mat-card class="result">
     <mat-card-content>
-      <h2 class="example-h2">Sample</h2>
-  
       <section
         *ngFor="let task of tasks; let i = index"
       >
-        <mat-checkbox [(ngModel)]="task.checked" (change)="testando()" (change)="calculo()" class="lista">
+        <mat-checkbox [(ngModel)]="task.checked" (change)="teste($event, task)" class="lista">
           {{task.name}}
         </mat-checkbox>
       </section>
@@ -16,4 +15,10 @@
   <section>
     <p>O tempo total necessário para realizar as tarefas é de: {{this.tempoTotal}}  </p>
   </section>
+
+  <section class="botao">
+    <button class="cancel-btn">Cancelar</button>
+    <button class="continue-btn">Continuar</button>
+</section>
+
 </body> 

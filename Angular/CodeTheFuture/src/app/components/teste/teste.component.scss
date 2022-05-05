@@ -10,6 +10,12 @@ body {
     align-items: center;
 }
 
+.header {
+    height: 10%;
+    background-color: #9EC298;
+    width: 100%;
+}
+
 .lista {
     background-color: white;
     width: 95%;
@@ -23,3 +29,49 @@ body {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 }
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: right; 
+    width: 100%;
+}
+
+.cancel-btn {
+    border-radius: 5px;
+    background-color: #E81515;
+    border: none;
+    height: 2%;
+    color: white;
+    margin-bottom: 3% !important;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.continue-btn {
+    border-radius: 5px;
+    background-color: #4DA53E;
+    border: none;
+    height: 2%;
+    color: white;
+    margin-bottom: 3% !important;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-left: 4%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  } 

@@ -27,42 +27,35 @@ export class TesteComponent {
   tempo = 0;
   tempoTotal = 0;
 
-  testando() {
-    console.log(this.tasks)
-  }
-
-
-  teste() {
-    console.log(this.selectAll);
-    if (this.selectAll === true) {
-      this.tasks.map((task) => {
-        task.checked = true;
-      });
-    } else {
-      this.tasks.map((task) => {
-        task.checked = false;
-      });
-    }
-  }
-
-  // calculo() {
-  //   if (this.tasks.checked === true) {
-  //     this.tasks.time.map(() => {
-  //       this.tasks[0].tempo += this.tasks[1].tempo;
-  //       this.tasks[0] = this.tasks[1]
-  //       this.tasks[1] = this.tasks[2]
-  //     });
-  //     console.log(this.tasks[0].tempo)
-  //   }
+  // testando() {
+  //   console.log(this.tasks)
   // }
 
 
-  calculo() {
-    if (this.tasks.checked === true) {
-      this.tasks.time.map((task) => {
-        this.tempoTotal = this.tempo + task.tempo
-      });
-      console.log(this.tempoTotal)
-    }
+  teste(event: any, task) {
+    console.log(event.checked, task)
+    // if (this.selectAll === true) {
+    //   this.tasks.map((task) => {
+    //     task.checked = true;
+    //   });
+    // } else {
+    //   this.tasks.map((task) => {
+    //     task.checked = false;
+    //   });
+    // }
+    console.log(this.tempoTotal, task.checked);
+    if (task.checked) {
+      // this.tempoTotal = task.tempo + this.tempoTotal;
+      this.tempoTotal += task.tempo;
+    } 
   }
+
+
+  // calculo() {
+  //   if (this.tasks.checked === true) {
+  //     this.tasks.time.map((task) => {
+  //       this.tempoTotal = this.tempo + task.tempo
+  //     });
+  //   }
+  // }
 }
