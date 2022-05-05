@@ -2,6 +2,7 @@ body {
     background-color: #D7F4D2;
     margin: 0;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,6 +15,19 @@ body {
     height: 10%;
     background-color: #9EC298;
     width: 100%;
+}
+
+.titulo {
+    margin-left: 0.5em;
+    color: #32602B;
+    padding-top: 1%;
+    font-weight: bold
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .lista {
@@ -30,11 +44,17 @@ body {
     padding-bottom: 0.5%;
 }
 
+.margem {
+    margin-top: 2%;
+    width: 70%;
+}
+
 .botao {
     display: flex;
     align-items: center;
     justify-content: right; 
     width: 100%;
+    background-color: #D7F4D2;
 }
 
 .cancel-btn {
