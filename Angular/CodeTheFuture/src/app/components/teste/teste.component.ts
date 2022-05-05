@@ -47,7 +47,7 @@ export class TesteComponent {
     if (task.checked) {
       // this.tempoTotal = task.tempo + this.tempoTotal;
       this.tempoTotal += task.tempo;
-    } 
+    }
   }
 
 
