@@ -4,7 +4,7 @@
     <h3 class="texto">O tempo total necessário para realizar as tarefas é de: {{this.tempoTotal}}</h3>
   </section>
   <mat-card class="margem">
-    <mat-card-content>
+    <mat-card-content class="fundo">
       <section
         *ngFor="let task of tasks; let i = index"
       >
@@ -14,9 +14,5 @@
       </section>
     </mat-card-content>
   </mat-card>
-
-  <section class="botao">
-    <button class="cancel-btn">Cancelar</button>
-  </section>
 
 </body> 

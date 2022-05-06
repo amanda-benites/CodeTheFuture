@@ -9,6 +9,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { TesteComponent } from './components/teste/teste.component';
 import { FormsModule } from '@angular/forms';
+import { routing } from './app.routing';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    routing,
   ],
   providers: [],
   bootstrap: [AppComponent]
