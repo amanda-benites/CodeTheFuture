@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './teste.component.html',
   styleUrls: ['./teste.component.scss']
 })
-export class TesteComponent {
+export class TesteComponent implements OnInit{
   tasks: any;
   selectAll = false;
 
@@ -23,6 +23,9 @@ export class TesteComponent {
       { name: "Arrumar o roupeiro", tempo: 20, checked: false }
     ];
   }
+
+  ngOnInit() {
+}
 
   tempo = 0;
   tempoTotal = 0;

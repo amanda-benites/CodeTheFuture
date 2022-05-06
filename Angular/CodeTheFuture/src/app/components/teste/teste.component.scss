@@ -39,7 +39,6 @@ body {
     justify-content: left;
     padding-left: 1%;
     border-radius: 20px;
-    list-style: none;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 }
@@ -47,6 +46,29 @@ body {
 .margem {
     margin-top: 2%;
     width: 70%;
+}
+
+.total {
+    color: white;
+    background-color: #32602B;
+    width: 30%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 1%;
+    border-radius: 5px;
+    list-style: none;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.texto {
+    padding-left: 50%;
+    color: #32602B;
+    padding-top: 1%;
+    font-weight: bold;
+
 }
 
 .botao {
@@ -63,7 +85,7 @@ body {
     border: none;
     height: 2%;
     color: white;
-    margin-bottom: 3% !important;
+    margin-top: 1%;
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 1.5%;
@@ -71,24 +93,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-}
-
-.continue-btn {
-    border-radius: 5px;
-    background-color: #4DA53E;
-    border: none;
-    height: 2%;
-    color: white;
-    margin-bottom: 3% !important;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    margin-left: 4%;
-    margin-right: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    margin-right: 3em;
 }
 
 button:hover {
