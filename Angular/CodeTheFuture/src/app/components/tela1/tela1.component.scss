@@ -6,14 +6,11 @@ body {
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    display: flex;
-    align-items: center;
 }
 
 .header {
-    height: 10%;
+    height: 15%;
     background-color: #9EC298;
-    width: 100%;
 }
 
 .align-center {
@@ -25,73 +22,69 @@ body {
 .titulo {
     margin-left: 0.5em;
     color: #32602B;
+    margin-top: 1.5%;
+    font-weight: bold;
 }
 
-.lista {
-    background-color: white;
-    width: 95%;
-    margin-top: 1%;
+.main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 1em;
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding-left: 1%;
-    border-radius: 20px;
-    list-style: none;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    justify-content: center;
 }
 
-.div_lista {
-    width: 100%;
+.button_conf {
+    width: 40%;
+    margin-left: 1em;
+    margin-top: -4%;
 }
 
-.botao {
-    display: flex;
-    align-items: center;
-    justify-content: right; 
-    width: 100%;
+.texto_conf {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    text-indent: 40px;
+    padding-top: 4em;
 }
 
-.cancel-btn {
-    border-radius: 5px;
-    background-color: #E81515;
-    border: none;
-    height: 2%;
-    color: white;
-    margin-bottom: 3% !important;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
+.texto_conf2 {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    text-indent: 40px;
+    padding-bottom: 2em;
 }
 
 .continue-btn {
     border-radius: 5px;
     background-color: #4DA53E;
     border: none;
-    height: 2%;
+    height: 7%;
     color: white;
     margin-bottom: 3% !important;
+    margin-left: 3%;
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    margin-left: 4%;
-    margin-right: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 button:hover {
     transform: scale(1.1);
     transition: all 0.5s;
-  } 
+} 
 
-.box {
+.image_conf {
+    width: 50%;
+    margin-top: -4%;
+}
+
+.image_border {
+    margin-left: 30%;
+}
+
+.image_border2 {
     margin-left: 2%;
-    margin-right: 2%;
 }
