@@ -39,35 +39,11 @@ export class TesteComponent implements OnInit{
   tempo = 0;
   tempoTotal = 0;
 
-  // testando() {
-  //   console.log(this.tasks)
-  // }
-
-
   teste(event: any, task) {
     console.log(event.checked, task)
-    // if (this.selectAll === true) {
-    //   this.tasks.map((task) => {
-    //     task.checked = true;
-    //   });
-    // } else {
-    //   this.tasks.map((task) => {
-    //     task.checked = false;
-    //   });
-    // }
     console.log(this.tempoTotal, task.checked);
     if (task.checked) {
-      // this.tempoTotal = task.tempo + this.tempoTotal;
       this.tempoTotal += task.tempo;
     }
   }
-
-
-  // calculo() {
-  //   if (this.tasks.checked === true) {
-  //     this.tasks.time.map((task) => {
-  //       this.tempoTotal = this.tempo + task.tempo
-  //     });
-  //   }
-  // }
 }
