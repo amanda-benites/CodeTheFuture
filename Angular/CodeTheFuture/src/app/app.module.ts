@@ -5,17 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Tela1Component } from './components/tela1/tela1.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
+import {MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS} from '@angular/material/dialog';
+
 import { TesteComponent } from './components/teste/teste.component';
 import { FormsModule } from '@angular/forms';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     Tela1Component,
-    TesteComponent
+    TesteComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -23,9 +28,12 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
