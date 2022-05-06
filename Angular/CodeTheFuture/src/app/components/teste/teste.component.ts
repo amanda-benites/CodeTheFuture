@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-teste',
@@ -6,7 +6,6 @@ import { Component, OnInit, Output } from '@angular/core';
   styleUrls: ['./teste.component.scss']
 })
 export class TesteComponent {
-  @Output() tempoTotal = 0;
   tasks: any;
   selectAll = false;
 
@@ -26,6 +25,8 @@ export class TesteComponent {
   }
 
   tempo = 0;
+  tempoTotal = 0;
+
   // testando() {
   //   console.log(this.tasks)
   // }
