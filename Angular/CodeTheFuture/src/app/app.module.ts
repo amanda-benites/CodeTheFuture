@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { TesteComponent } from './components/teste/teste.component';
 import { FormsModule } from '@angular/forms';
 import { routing } from './app.routing';
+import { FinalComponent } from './components/final/final.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { routing } from './app.routing';
     AppComponent,
     Tela1Component,
     TesteComponent,
+    FinalComponent,
   ],
   imports: [
     BrowserModule,
